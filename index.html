@@ -1,20 +1,44 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Super Multiplayer Game</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pixel Rally — Avancé</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="game" width="900" height="600"></canvas>
+<canvas id="game" width="1200" height="700"></canvas>
 
-  <div id="ui">
-    <input id="username" placeholder="Entre ton pseudo">
-    <button id="connectBtn">Rejoindre</button>
-    <p id="status">Non connecté</p>
-  </div>
 
-  <script type="module" src="game.js"></script>
+<div id="ui">
+<input id="username" placeholder="Pseudo">
+<select id="mode">
+<option value="firebase">Realtime (Firebase)</option>
+<option value="supabase">Realtime (Supabase)</option>
+<option value="ws">WebSocket (serveur Node)</option>
+</select>
+<input id="room" placeholder="Nom de la room (publique)">
+<button id="connectBtn">Connecter</button>
+<div id="status">Statut: Déconnecté</div>
+
+
+<div id="controls">
+<p>WASD / Flèches = bouger • Clique = tirer</p>
+<p><button id="shopBtn">Skins / Shop</button></p>
+</div>
+
+
+<div id="chat">
+<div id="chatLog"></div>
+<input id="chatInput" placeholder="Message...">
+<button id="chatSend">Envoyer</button>
+</div>
+
+
+<div id="scoreboard"><h3>Scoreboard</h3><div id="scores"></div></div>
+</div>
+
+
+<script type="module" src="game.js"></script>
 </body>
 </html>
