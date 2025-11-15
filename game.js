@@ -263,7 +263,6 @@ function tick(t) {
   draw();
   requestAnimationFrame(tick);
 }
-let last = performance.now();
 requestAnimationFrame(tick);
 
 // --- cleanup on unload ---
