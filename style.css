@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background: #0d0f1a;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#game {
+  border: 3px solid #1e90ff;
+  border-radius: 10px;
+  background: #11172b;
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.4);
+}
+
+#ui {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 12px;
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+}
+
+#username {
+  width: 140px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+#connectBtn {
+  margin-top: 8px;
+  width: 150px;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  cursor: pointer;
+}
+
+#status {
+  margin-top: 5px;
+  font-size: 13px;
+}
