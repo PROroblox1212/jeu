@@ -4,8 +4,8 @@
 
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
-const SUPABASE_URL = 'https://REPLACE.supabase.co';
-const SUPABASE_ANON_KEY = 'REPLACE_ANON_KEY';
+const SUPABASE_URL = 'https://ytojampaxfzjlcbgbdtg.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl0b2phbXBheGZ6amxjYmdiZHRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMxNjc3ODksImV4cCI6MjA3ODc0Mzc4OX0.BEu6CeDwOogtXiJ9AkCgb84r6zElu8ji0scs2d_hzt8';
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
