@@ -9,8 +9,4 @@ body{margin:0;height:100vh;display:flex;align-items:center;justify-content:cente
 #chatLog{height:140px;overflow:auto;background:rgba(0,0,0,0.12);padding:8px;border-radius:6px}
 #scoreboard{margin-top:10px}
 #scores{max-height:150px;overflow:auto}
-
-
-/* shop modal quick style */
-#shopModal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6)}
-#shopModal .card{background:#071022;padding:18px;border-radius:10px;width:480px}
+#chatLog div{padding:6px 4px;border-bottom:1px dashed rgba(255,255,255,0.03);font-size:13px}
