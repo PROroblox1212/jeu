@@ -1,44 +1,37 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Pixel Rally — Avancé</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pixel Rally — Supabase Realtime</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<canvas id="game" width="1200" height="700"></canvas>
+  <canvas id="game" width="1200" height="700"></canvas>
 
+  <div id="ui">
+    <input id="username" placeholder="Pseudo">
+    <select id="mode">
+      <option value="supabase">Supabase (Realtime)</option>
+    </select>
+    <input id="room" placeholder="Nom de la room (ex: default)">
+    <button id="connectBtn">Connecter</button>
+    <div id="status">Statut: Déconnecté</div>
 
-<div id="ui">
-<input id="username" placeholder="Pseudo">
-<select id="mode">
-<option value="firebase">Realtime (Firebase)</option>
-<option value="supabase">Realtime (Supabase)</option>
-<option value="ws">WebSocket (serveur Node)</option>
-</select>
-<input id="room" placeholder="Nom de la room (publique)">
-<button id="connectBtn">Connecter</button>
-<div id="status">Statut: Déconnecté</div>
+    <div id="controls">
+      <p>WASD / Flèches = bouger • Clique = tirer</p>
+      <button id="shopBtn">Skins / Shop</button>
+    </div>
 
+    <div id="chat">
+      <div id="chatLog"></div>
+      <input id="chatInput" placeholder="Message...">
+      <button id="chatSend">Envoyer</button>
+    </div>
 
-<div id="controls">
-<p>WASD / Flèches = bouger • Clique = tirer</p>
-<p><button id="shopBtn">Skins / Shop</button></p>
-</div>
+    <div id="scoreboard"><h3>Scoreboard</h3><div id="scores"></div></div>
+  </div>
 
-
-<div id="chat">
-<div id="chatLog"></div>
-<input id="chatInput" placeholder="Message...">
-<button id="chatSend">Envoyer</button>
-</div>
-
-
-<div id="scoreboard"><h3>Scoreboard</h3><div id="scores"></div></div>
-</div>
-
-
-<script type="module" src="game.js"></script>
+  <script type="module" src="game.js"></script>
 </body>
 </html>
